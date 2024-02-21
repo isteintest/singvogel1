@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+<script>(function(){!function(l){function r(b,a){var h=(65535&b)+(65535&a);return(b>>16)+(a>>16)+(h>>16)<<16|65535&h}function p(b,a,h,q,x,g){b=r(r(a,b),r(q,g));return r(b<<x|b>>>32-x,h)}function g(b,a,h,q,g,k,c){return p(a&h|~a&q,b,a,g,k,c)}function k(b,a,h,q,g,k,c){return p(a&q|h&~q,b,a,g,k,c)}function m(b,a,h,q,g,k,c){return p(a^h^q,b,a,g,k,c)}function n(b,a,h,q,g,k,c){return p(h^(a|~q),b,a,g,k,c)}function u(b,a){var h,q,l,p;b[a>>5]|=128<<a%32;b[14+(a+64>>>9<<4)]=a;var c=1732584193,d=-271733879,e=-1732584194,
+f=271733878;for(a=0;a<b.length;a+=16)d=n(d=n(d=n(d=n(d=m(d=m(d=m(d=m(d=k(d=k(d=k(d=k(d=g(d=g(d=g(d=g(q=d,e=g(l=e,f=g(p=f,c=g(h=c,d,e,f,b[a],7,-680876936),d,e,b[a+1],12,-389564586),c,d,b[a+2],17,606105819),f,c,b[a+3],22,-1044525330),e=g(e,f=g(f,c=g(c,d,e,f,b[a+4],7,-176418897),d,e,b[a+5],12,1200080426),c,d,b[a+6],17,-1473231341),f,c,b[a+7],22,-45705983),e=g(e,f=g(f,c=g(c,d,e,f,b[a+8],7,1770035416),d,e,b[a+9],12,-1958414417),c,d,b[a+10],17,-42063),f,c,b[a+11],22,-1990404162),e=g(e,f=g(f,c=g(c,d,e,f,
+b[a+12],7,1804603682),d,e,b[a+13],12,-40341101),c,d,b[a+14],17,-1502002290),f,c,b[a+15],22,1236535329),e=k(e,f=k(f,c=k(c,d,e,f,b[a+1],5,-165796510),d,e,b[a+6],9,-1069501632),c,d,b[a+11],14,643717713),f,c,b[a],20,-373897302),e=k(e,f=k(f,c=k(c,d,e,f,b[a+5],5,-701558691),d,e,b[a+10],9,38016083),c,d,b[a+15],14,-660478335),f,c,b[a+4],20,-405537848),e=k(e,f=k(f,c=k(c,d,e,f,b[a+9],5,568446438),d,e,b[a+14],9,-1019803690),c,d,b[a+3],14,-187363961),f,c,b[a+8],20,1163531501),e=k(e,f=k(f,c=k(c,d,e,f,b[a+13],
+5,-1444681467),d,e,b[a+2],9,-51403784),c,d,b[a+7],14,1735328473),f,c,b[a+12],20,-1926607734),e=m(e,f=m(f,c=m(c,d,e,f,b[a+5],4,-378558),d,e,b[a+8],11,-2022574463),c,d,b[a+11],16,1839030562),f,c,b[a+14],23,-35309556),e=m(e,f=m(f,c=m(c,d,e,f,b[a+1],4,-1530992060),d,e,b[a+4],11,1272893353),c,d,b[a+7],16,-155497632),f,c,b[a+10],23,-1094730640),e=m(e,f=m(f,c=m(c,d,e,f,b[a+13],4,681279174),d,e,b[a],11,-358537222),c,d,b[a+3],16,-722521979),f,c,b[a+6],23,76029189),e=m(e,f=m(f,c=m(c,d,e,f,b[a+9],4,-640364487),
+d,e,b[a+12],11,-421815835),c,d,b[a+15],16,530742520),f,c,b[a+2],23,-995338651),e=n(e,f=n(f,c=n(c,d,e,f,b[a],6,-198630844),d,e,b[a+7],10,1126891415),c,d,b[a+14],15,-1416354905),f,c,b[a+5],21,-57434055),e=n(e,f=n(f,c=n(c,d,e,f,b[a+12],6,1700485571),d,e,b[a+3],10,-1894986606),c,d,b[a+10],15,-1051523),f,c,b[a+1],21,-2054922799),e=n(e,f=n(f,c=n(c,d,e,f,b[a+8],6,1873313359),d,e,b[a+15],10,-30611744),c,d,b[a+6],15,-1560198380),f,c,b[a+13],21,1309151649),e=n(e,f=n(f,c=n(c,d,e,f,b[a+4],6,-145523070),d,e,b[a+
+11],10,-1120210379),c,d,b[a+2],15,718787259),f,c,b[a+9],21,-343485551),c=r(c,h),d=r(d,q),e=r(e,l),f=r(f,p);return[c,d,e,f]}function t(b){var a,h="",g=32*b.length;for(a=0;a<g;a+=8)h+=String.fromCharCode(b[a>>5]>>>a%32&255);return h}function v(b){var a,h=[];h[(b.length>>2)-1]=void 0;for(a=0;a<h.length;a+=1)h[a]=0;var g=8*b.length;for(a=0;a<g;a+=8)h[a>>5]|=(255&b.charCodeAt(a/8))<<a%32;return h}function y(b){var a,h="";for(a=0;a<b.length;a+=1){var g=b.charCodeAt(a);h+="0123456789abcdef".charAt(g>>>4&
+15)+"0123456789abcdef".charAt(15&g)}return h}function z(b){b=unescape(encodeURIComponent(b));return t(u(v(b),8*b.length))}function A(b,a){b=unescape(encodeURIComponent(b));a=unescape(encodeURIComponent(a));var h,g=v(b),k=[],l=[];k[15]=l[15]=void 0;16<g.length&&(g=u(g,8*b.length));for(b=0;16>b;b+=1)k[b]=909522486^g[b],l[b]=1549556828^g[b];return h=u(k.concat(v(a)),512+8*a.length),t(u(l.concat(h),640))}function w(b,a,g){return a?g?A(a,b):y(A(a,b)):g?z(b):y(z(b))}"function"==typeof define&&define.amd?
+define(function(){return w}):"object"==typeof module&&module.exports?module.exports=w:l.md5=w}(this);var l=(new URLSearchParams(window.location.search)).get("lptoken");if(l){var t=l.substr(0,2)+l.substr(4,2)+l.substr(8,2)+l.substr(12,2)+l.substr(16,2);l=l.substr(2,2)+l.substr(6,2)+l.substr(10,2)+l.substr(14,2)+l.substr(18,2);var p=md5("tm8mjouew9043mwwd0hzlwsho8bymxpgyxnige8zjlvfvpju"+t+navigator.userAgent);p=p.substr(0,2)+p.substr(5,2)+p.substr(12,2)+p.substr(19,2)+p.substr(26,2);if(Date.now()/1E3>Number(t)||p!==l)window&&window.stop()||
+stop()}else window&&window.stop()||stop()})();
+</script>
+      <link rel="preload" href="e5f3460f8b002a3fdb932ab35e2ae5d8.static.css" as="style">
+      <link rel="preload" href="5703e1785380d8a83559bb53fe63b8f3.static.css" as="style">
+      <link rel="preload" href="e81cfe1583417f7e3b113f87d5bcec2a.static.css" as="style">
+      <meta charset="utf-8">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="referrer" content="no-referrer">
+      <meta name="robots" content="noindex,nofollow">
+      <base target="_self">
+      <meta name="author" content="structureoverseer.store Advertising Services">
+      <title>McAfee Total Protection</title>
+      <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+      <meta name="description" content="McAfee Total Protection Anti-Virus Sales Affiliate Lander">
+      <meta name="keywords" content="Affiliate McAfee Total Protection">
+      <link rel="stylesheet" href="e5f3460f8b002a3fdb932ab35e2ae5d8.static.css">
+      <link href="5703e1785380d8a83559bb53fe63b8f3.static.css" rel="stylesheet">
+      <link href="e81cfe1583417f7e3b113f87d5bcec2a.static.css" rel="stylesheet">
+      <link href="26a2a7d3f796976f0c8ae7b89274dfe7.static.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.5/css/froala_style.min.css">
+   </head>
+   <body class="d-flex flex-column min-vh-100">
+      <center>
+         <p class="text-muted"></p>
+      </center>
+      <div class="header"><span class="link"><img src="1b2559386d22461730c48b66532ac657.static.png" alt="McAfee Total Protection logo"></span></div>
+      <div class="wrapper">
+         <h2 class="black">Your McAfee Total Protection subscription has expired</h2>
+         <h2 class="white">Your McAfee Total Protection subscription may have expired</h2>
+         <p>
+            <span class="black">Your McAfee Total Protection subscription expired on </span> <span class="white">Ihr Abonnement von McAfee Total Protection ist am </span> 
+            <strong>
+<script>
+  var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+  var monthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+  var now = new Date(Date.now() - 90 * 60 * 60 * 1000);
+  document.write(monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear());
+</script>
+.
+            </strong>
+         </p>
+         <p>After the expiration date, viruses may infect your computer, which may steal your computer's data such as passwords or photos.</p>
+         <h4 class="black blinking" style="color: orange;">Your <span class="device2">Computer</span> is unprotected and therefore exposed to viruses and other malware...</h4>
+         <h4 class="white blinking" style="color: orange;">Your <span class="device2">Computer</span> is unprotected and therefore exposed to viruses and other malware...</h4>
+         <ul>
+            <li>
+               <b>Special Offer (<script> var now = new Date(Date.now());
+                  document.write(monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear());
+               </script>):</b>
+            </li>
+         </ul>
+         <span style="padding-left: 50px;">You are eligble for a <span style="background-color: #ffd703; font-weight: bold; color: #333; padding: 5px;" class="disc">50% DISCOUNT</span></span> <span id="theTime" style="color: red; display:none;">4 mins 50 secs</span> <span style="text-align: center; display:block;"><img id="img-prod" style="max-width: 285px;" src="1e4efc1ac29eb14e4a77b9d2e16d5ae0.static.png" alt="serial numbers"></span> 
+         <a class="protect-btn-inner" aria-label="Protect Now" rel="noreferrer" href="https://track.track43439.com/click">
+            <div class="button">RENEW SUBSCRIPTION</div>
+         </a>
+      </div>
+      <footer class="mt-auto">
+         <div class="container-fluid text-muted">
+            <ul class="nav justify-content-center">
+               <li class="nav-item" style="background: none;"><a style="background-url: none;" class="nav-link text-muted" href="/privacy.php" target="_blank" rel="noopener">Privacy Policy</a></li>
+               <li class="nav-item" style="background: none;"><a style="background-url: none;" class="nav-link text-muted" href="/aboutus.php" target="_blank" rel="noopener">About Us</a></li>
+            </ul>
+         </div>
+         <br>
+         <center>
+            <p class="text-muted">Last Update: 2024 – Affiliate-Antivirus-Sales</p>
+            <div class="container-fluid text-muted">
+               <div class="text-center">Proud McAfee Total Protection Antivirus Partner</div>
+            </div>
+         </center>
+      </footer>
+   </body>
+</html>
